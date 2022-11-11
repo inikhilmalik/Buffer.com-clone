@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #log {
+            margin-top: 80px;
+            
+            font-size: 16px;
+            font-family: Roboto, sans-serif;
+            height: auto;
+        }
+
+        #log>form {
+            margin: auto;
+            width: 28%;
+        }
+        form>input{
+            padding: 15px 130px;
+        }
+        #Email{
+            margin: 10px 0px 20px 0px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        #Pass{
+            margin-top: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #link{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #link>a{
+            color: rgb(77, 76, 76);
+            text-decoration: none;
+        }
+        #btn{
+            margin: 15px 0px;
+            padding: 18px 192px;
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: rgb(44, 75, 255) ;
+        }
+        #p{
+            color: gray;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <img width="8%" src="LOGO.png" alt="pic">
+        </div>
+        <div id="log">
+            <form>
+                <h1>Log in</h1>
+                <label for="">Email Address</label><br />
+                <input id="Email" type="email" /><br />
+                <label for="password">Password</label><br />
+                <input id="Pass" type="password" /><br>
+                <input id="btn" type="submit" value="Log in" /><br>
+                <div id="link">
+                    <a href="created.html">Create an account</a>
+                    <a href="">Forgot your password ?</a>
+                </div>
+                <div id="p">
+                    <p>We no longer support social sign on. Please click here to set your password and access your account.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<Script>
+    document.querySelector("#btn").addEventListener("click",function(){
+        alert("LOGIN SUCCESS !");
+    })
+</Script>

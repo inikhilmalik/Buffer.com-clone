@@ -14,6 +14,7 @@
 
         /* ------------- NAV BAR--------------- */
         #nav {
+            
             margin: auto;
             border-radius: 0px 0px 15px 15px;
             /* border: 1px solid black; */
@@ -23,14 +24,27 @@
             display: flex;
             padding: 0px 40px;
             align-items: center;
+            position: sticky;
+            top:0;
+            background-color: white;
+            
         }
 
         #nav>div>h2 {
+            
             font-weight: 400;
             font-family: Roboto, sans-serif;
             font-size: 18px;
+            
         }
-
+        #li{
+            text-decoration: none;
+            color: rgb(44, 44, 248);
+        }
+        .btn{
+            text-decoration: none;
+            color: white;
+        }
         #nav>img {
             margin: 0px 5px;
         }
@@ -50,6 +64,7 @@
             font-size: 20px;
             border: 0px;
             border-radius: 5px;
+            
         }
 
         #nav>h2 {
@@ -96,8 +111,8 @@
             background-color: rgb(44, 44, 248);
             border: 0px;
             color: white;
-            padding: 10px 20px;
-            font-size: 20px;
+            padding: 12px 10px;
+            font-size: 18px;
             margin-right: 10px;
             border-radius: 5px;
         }
@@ -401,8 +416,9 @@
                 <h2>About</h2>
                 <h2>Customers</h2>
             </div>
-            <h2>Log in</h2>
-            <button>Get started now</button>
+            <h2><a id="li" href="login.html">Log in</a> </h2>
+            <button><a class="btn" href="created.html"> Get started now</a></button>
+            
         </div>
 
         <div id="top">
@@ -411,7 +427,7 @@
                 <p>STEP UP helps you build an audience organically. We’re a values-driven company that provides
                     affordable, intuitive, marketing tools for ambitious people and teams.</p>
                 <div id="b1">
-                    <button>Get started now</button>
+                    <button><a class="btn" href="created.html"> Get started now</a></button>
                     <button>Watch video</button>
                 </div>
             </div>
@@ -625,3 +641,7 @@
 </body>
 
 </html>
+
+<script>
+    
+</script>
