@@ -22,6 +22,11 @@
         form>input{
             padding: 15px 130px;
         }
+        #Name{
+            margin: 10px 0px 20px 0px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
         #Email{
             margin: 10px 0px 20px 0px;
             border-radius: 5px;
@@ -49,6 +54,9 @@
             font-size: 15px;
             background-color: rgb(44, 75, 255) ;
         }
+        #btn:hover{
+            background-color: rgb(1, 24, 155);
+        }    
         h1{
             font-size: 30px;
         }
@@ -63,6 +71,8 @@
         <div id="log">
             <form>
                 <h1>Let's get your account set up</h1>
+                <label for="">Full Name</label><br />
+                <input id="Name" type="text" /><br />
                 <label for="">Email</label><br />
                 <input id="Email" type="email" /><br />
                 <label for="password">Create a Password</label><br />
@@ -78,7 +88,10 @@
 
 </html>
 <script>
-    document.querySelector("#btn").addEventListener("click",function(){
-        alert("SUCCESSFULLY CREATED !");
+    
+    document.querySelector("form").addEventListener("submit",function(){
+    let n=document.querySelector("#Name").value;
+    console.log(n)
+        alert("SUCCESSFULLY CREATED !"+"\n"+"Hello ! "+n);
     })
 </script>
